@@ -13,3 +13,24 @@ let person: [number, string, boolean] = [1, 'Brad', true]
 let people: [number, string][]; // Tuple Array
 
 people = [[1, 'John'], [1, 'Joe'], [1, 'hamo']]
+
+// Union
+let id: string | number = 1
+    id = 'Hello'
+
+// Enum
+enum Direction1 {
+    First = 1,
+    Second,
+    Third,
+    Fourth
+}
+
+enum Direction2 {
+    First = "First",
+    Second = "Second",
+    Third = "Third",
+    Fourth = "Fourth"
+}
+
+
