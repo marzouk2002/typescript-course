@@ -28,3 +28,18 @@ var Direction2;
     Direction2["Third"] = "Third";
     Direction2["Fourth"] = "Fourth";
 })(Direction2 || (Direction2 = {}));
+const user = {
+    id: 1,
+    name: 'John'
+};
+// Type Assertion
+let cid = 1;
+// let customerId = <number>cid
+let customerId = cid;
+// Functions
+function addNum(x, y) {
+    return x + y;
+}
+function log(message) {
+    console.log(message);
+}
