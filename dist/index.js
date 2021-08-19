@@ -43,3 +43,28 @@ function addNum(x, y) {
 function log(message) {
     console.log(message);
 }
+const user1 = {
+    id: 1,
+    name: 'John'
+};
+const add = (x, y) => x + y;
+const sub = (x, y) => x - y;
+class Person {
+    // these props can be protected, public or private
+    constructor(id, name, age) {
+        this.id = id;
+        this.name = name;
+        this.age = age;
+    }
+    register() {
+        return `${this.name} registered`;
+    }
+}
+const john = new Person(1, 'john', 25);
+class Employee extends Person {
+    constructor(id, name, age, position) {
+        super(id, name, age);
+        this.position = position;
+    }
+}
+const emp = new Employee(3, 'ddd', 40, 'Developer');
